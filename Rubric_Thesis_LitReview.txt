@@ -1,0 +1,275 @@
+================================================================================
+LITERATURE REVIEW GRADING RUBRIC — STANDALONE THESIS CHAPTER
+(Adapted from Creswell, "Review of the Literature," for a completed master's-
+thesis literature-review chapter rather than a research proposal.)
+================================================================================
+
+WHY THIS RUBRIC DIFFERS FROM THE PROPOSAL RUBRIC
+-------------------------------------------------------------------------------
+Creswell's chapter describes the literature review as part of a research
+PROPOSAL — the preliminary work done before a study. Several of his checklist
+items (a <=12-word working title, a "can/should" feasibility reflection, a
+Definition of Terms section, extensive early term definitions) belong to OTHER
+chapters of a finished thesis (title page, methods, front matter) and should
+NOT be graded inside the literature-review chapter. This rubric keeps every
+Creswell standard that genuinely applies to a standalone review chapter —
+synthesis, source quality, the literature map, thematic organization, the gap
+statement, style mechanics — and reframes the rest around what a review
+chapter is actually responsible for: orienting the reader, organizing the
+field, and positioning the study.
+
+================================================================================
+PART 1: AI GRADING SYSTEM PROMPT
+Copy the block below into the grading tool as its system instructions.
+================================================================================
+
+You are an expert academic evaluator specializing in research methodology and
+the assessment of graduate literature reviews. Your task is to grade the
+provided literature-review CHAPTER (from a completed master's thesis, not a
+proposal) against the rubric below.
+
+Rules:
+1. Grade only the literature-review chapter. Do NOT penalize the chapter for
+   omitting material that belongs in other thesis chapters (title page,
+   methods, feasibility, a separate Definition of Terms section). If such an
+   item is absent, mark it "Out of scope" and do not lower the score for it.
+2. For each of the 7 dimensions, review the text passage by passage.
+3. Evaluate each checklist item as Yes / Partial / No and quote specific
+   student text as evidence.
+4. Assign a 1-4 score per dimension using the matching grading matrix.
+5. Give concrete, actionable feedback naming what would raise the score,
+   grounded in the Creswell principle cited for that dimension.
+
+At the end, output:
+- A "Summary of Scores" table (dimension, score, one-line justification).
+- A "Cumulative Score" out of 28.
+- A prioritized "Top 3 Areas for Revision" list.
+
+================================================================================
+PART 2: SCORING SCALE
+================================================================================
+4 - Excellent:  Fully meets all in-scope checklist criteria; clear, precise,
+                scholarly execution.
+3 - Proficient: Meets most criteria with minor omissions or slight imprecision.
+2 - Developing: Meets some criteria; significant omissions or organizational
+                problems.
+1 - Inadequate: Fails to meet criteria or shows fundamental misunderstanding.
+
+Maximum total: 28 points (7 dimensions x 4).
+
+================================================================================
+DIMENSION 1 — ORIENTATION AND SCOPE
+Creswell grounding: purpose of the review; framing the problem; narrowing scope.
+--------------------------------------------------------------------------------
+The chapter must orient the reader to the topic, the question, and the
+boundaries of the review before surveying the field.
+
+Checklist:
+[ ] Topic stated plainly early, in uncomplicated language (the reader grasps
+    the subject within the first paragraph).
+[ ] The central research question or the relationship under study is stated
+    explicitly, not merely implied.
+[ ] Scope boundaries are defined (population, time frame, what is included and
+    deliberately excluded).
+[ ] A roadmap tells the reader how the review is organized.
+[ ] Framing moves from the broader problem toward the specific issue the thesis
+    addresses.
+
+Grading matrix:
+4: Topic, question, scope boundaries, and roadmap are all present and stated in
+   clear language; framing narrows purposefully from broad to specific.
+3: Topic and question are clear; scope or roadmap is present but thin.
+2: Topic is identifiable but the question, scope, or roadmap is missing or
+   buried in complex language.
+1: No clear topic statement or orientation; the reader cannot tell what is
+   being reviewed or why.
+
+================================================================================
+DIMENSION 2 — SEARCH STRATEGY AND SOURCE QUALITY
+Creswell grounding: systematic search; database use; source prioritization.
+--------------------------------------------------------------------------------
+The chapter should make its evidence base transparent and demonstrate a
+priority on high-quality scholarly sources.
+
+Checklist:
+[ ] Names the databases or search approach used (e.g., JSTOR, EconLit, SocINDEX,
+    Google Scholar, PubMed, PsycINFO, SSCI; or citation tracing).
+[ ] Identifies search terms / keywords / descriptors.
+[ ] Indicates the scale of the search or the size of the retained source pool.
+[ ] Prioritizes peer-reviewed journal articles and university-press research
+    monographs.
+[ ] Screens out or de-prioritizes non-refereed web sources, conference papers,
+    and dissertations (or justifies their inclusion).
+
+Grading matrix:
+4: A search-strategy passage names databases, keywords, and pool size, and the
+   cited sources are overwhelmingly peer-reviewed articles and scholarly books.
+3: Source quality is clearly high, but the search-strategy description is brief
+   or partial (e.g., databases named but not keywords).
+2: No search-strategy description; source quality is mixed or leans on books /
+   non-empirical sources without justification.
+1: No search description and a thin, dated, or non-scholarly source base.
+
+================================================================================
+DIMENSION 3 — VISUAL LITERATURE MAP
+Creswell grounding: the literature map and its narrative description.
+--------------------------------------------------------------------------------
+Creswell treats the literature map as a core device for organizing the field
+and positioning the study. This dimension applies directly to a review chapter.
+
+Checklist:
+[ ] A visual map is present (hierarchical tree, flowchart, or overlapping
+    circles).
+[ ] Literature is grouped into labeled thematic branches (and sub-branches
+    where warranted).
+[ ] Illustrative citations appear inside the branches, in a consistent style.
+[ ] The proposed study is placed at the base or intersection ("Need to Study"
+    box) with lines showing which branches it extends.
+[ ] A narrative paragraph walks the reader through the map: the branches, the
+    groupings, and how the study connects to each.
+
+Grading matrix:
+4: A clearly structured map with labeled branches, in-branch citations, a
+   "Need to Study" box, connecting lines, AND a narrative that explains the
+   branches and the study's connection to each.
+3: A map is present and thematically grouped, but lacks sub-levels, in-branch
+   citations, or a full narrative of how the study extends specific branches.
+2: A map exists but is a flat list rather than a thematic grouping, or the
+   proposed study is not positioned as an extension; narrative missing.
+1: No literature map and no narrative description.
+
+================================================================================
+DIMENSION 4 — THEMATIC SYNTHESIS (NOT AN ANNOTATED LIST)
+Creswell grounding: abstracting studies; organizing thematically; summarizing
+central issues.
+--------------------------------------------------------------------------------
+The heart of a review chapter. Studies must be woven into a thematic argument,
+not listed one by one, and the synthesis must extract the analytically relevant
+content of each source.
+
+Checklist:
+[ ] Literature is organized by theme/concept, not source-by-source as an
+    annotated bibliography.
+[ ] For key empirical studies, the review conveys the relevant substance
+    (problem/purpose, what was found, and — where relevant — sample or method).
+[ ] The review appraises as well as reports: it notes limitations, tensions, or
+    methodological critiques of at least the pivotal studies.
+[ ] Competing findings or debates are put into dialogue rather than listed side
+    by side.
+[ ] Each thematic section builds toward the study's argument rather than
+    standing in isolation.
+
+Grading matrix:
+4: Fully thematic; sources are synthesized into a cumulative argument; pivotal
+   studies are critically appraised; debates are genuinely put in dialogue.
+3: Mostly thematic and synthetic, but one or more sections read as sequential
+   summaries, or critique is light on some pivotal studies.
+2: Substantial stretches read as an annotated list; limited synthesis or
+   appraisal.
+1: Source-by-source summaries with no thematic structure or critical
+   engagement.
+
+================================================================================
+DIMENSION 5 — GAP STATEMENT AND CONTRIBUTION ("SHOULD")
+Creswell grounding: how the study adds to the literature; broad significance.
+--------------------------------------------------------------------------------
+The review must culminate in a clear account of the gap and how the thesis
+fills it. (This is the "should it be studied" question, in the form that
+belongs in a review chapter.)
+
+Checklist:
+[ ] A specific gap in the existing literature is named, not merely gestured at.
+[ ] The gap follows logically from the synthesis that precedes it.
+[ ] The chapter states how the thesis addresses the gap (new data, new
+    population, extension, or replication in a new setting).
+[ ] The contribution is framed as being of broad rather than purely local
+    interest.
+[ ] The review connects the gap to the study's questions or hypotheses.
+
+Grading matrix:
+4: A precise gap emerges from the synthesis, the thesis's contribution is
+   explicitly tied to it, broad significance is clear, and the link to the
+   study's questions/hypotheses is explicit.
+3: A gap and contribution are stated, but somewhat generally, or the link to
+   questions/hypotheses is implicit.
+2: The gap is vague or asserted without support from the preceding synthesis.
+1: No identifiable gap or statement of contribution.
+
+================================================================================
+DIMENSION 6 — STRUCTURAL ALIGNMENT WITH THE STUDY DESIGN
+Creswell grounding: deductive (quantitative) reviews provide direction for
+questions/hypotheses; structure should serve the design.
+--------------------------------------------------------------------------------
+The chapter's macro-structure should fit the study's paradigm. For a
+quantitative / deductive thesis, the review should supply substantial theory up
+front and connect predictors to outcomes; a strict five-part IV/DV template is
+one acceptable form but not the only one, provided the functional elements are
+present.
+
+Checklist (quantitative / deductive thesis):
+[ ] Substantial literature is placed up front to provide direction for the
+    research questions or hypotheses.
+[ ] The review introduces and organizes the literature on the key predictor(s)
+    / independent construct(s).
+[ ] The review covers the literature on the outcome(s) / dependent
+    construct(s).
+[ ] A section brings predictors and outcomes together (the studies closest to
+    the thesis's own question).
+[ ] The review culminates in a summary that states the gap and how the study
+    fills it.
+(For a qualitative thesis, substitute: literature is used to frame the problem
+and is positioned to be revisited against emergent findings, without over-
+constraining the inquiry.)
+
+Grading matrix:
+4: Structure clearly serves the design: substantial up-front theory driving the
+   questions/hypotheses, predictor and outcome literatures both developed, a
+   relating section, and a gap summary.
+3: The functional elements are present but one is thin, or predictor/outcome
+   literatures are somewhat blended where separation would aid clarity.
+2: Structure only loosely follows the design; a key element (up-front theory,
+   outcome literature, or relating section) is missing.
+1: Disorganized structure with no discernible relationship to the study's
+   questions or design.
+
+================================================================================
+DIMENSION 7 — SCHOLARLY STYLE AND MECHANICS
+Creswell grounding: consistent style manual; headings; figures; cross-checking.
+--------------------------------------------------------------------------------
+Checklist:
+[ ] A single citation style is applied consistently throughout (APA, ASA,
+    Chicago — whichever the program requires).
+[ ] Every in-text citation has a matching reference-list entry, and vice versa
+    (1:1 cross-check).
+[ ] Headings are ordered in consistent, scholarly levels (typically 2-4).
+[ ] Figures/tables (including the literature map) are titled, captioned, and
+    formatted consistently.
+[ ] Language is clear, precise, and free of distracting formatting artifacts.
+
+Grading matrix:
+4: Consistent style throughout; clean 1:1 citation cross-check; well-ordered
+   headings; properly captioned figure(s); polished prose.
+3: Overall consistent with 1-3 minor mechanical slips (a formatting artifact, a
+   heading inconsistency, a citation to spot-check).
+2: Inconsistent style application, several citation mismatches, or missing
+   figure captions/headings.
+1: No consistent style; missing reference list, in-text citations, or headings.
+
+================================================================================
+PART 3: SCORE SUMMARY TEMPLATE
+================================================================================
+Dimension                                             Score (1-4)   Notes
+1. Orientation and Scope ............................. ____
+2. Search Strategy and Source Quality ............... ____
+3. Visual Literature Map ............................ ____
+4. Thematic Synthesis ............................... ____
+5. Gap Statement and Contribution ................... ____
+6. Structural Alignment with Study Design ........... ____
+7. Scholarly Style and Mechanics .................... ____
+                                        CUMULATIVE:  ____ / 28
+
+Top 3 Areas for Revision:
+1.
+2.
+3.
+================================================================================
