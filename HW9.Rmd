@@ -1,0 +1,101 @@
+---
+title: "HW 9"
+author: "Yinxian Zhang"
+date: "2026-04-28"
+output: 
+  pdf_document:
+    latex_engine: xelatex
+---
+
+# Welcome to Homework 9. 
+
+In previous HWs, we only did univariate analyses. Now it is time to consider two variables together. In this homework, you are going to explore the **bivariate associations** between variables from the GSS2006 dataset. Please follow the instructions below to run the R code, then answer the questions on BrightSpace. 
+
+## prepare packages
+
+Please run the code chunk below to load two R packages. 
+
+```{r packages, message=FALSE}
+library(tidyverse)
+library(readxl)     
+```
+
+## read in and inspect data
+
+Let's load the GSS 2006 data and inspect the dataframe. 
+
+```{r}
+gss <- read_excel('GSS2006.xlsx', sheet='GSS 2006')  
+nrow(gss)
+ncol(gss)
+
+```
+
+## introducing the two variables
+
+First, let's take a look at the *joint frequency distributions* of `libconsv` (Respondent's ideological stance) and `gunlaw` (Respondent's attitudes towards gun control). Please run the code chunk below to make the joint frequency table, then please answer: 
+
+```{r}
+table(gss$libconsv, gss$gunlaw)          # a cross-tab of the two vars
+```
+
+
+Q1. What is the *specific* level of measurement (nominal, ordinal, interval, ratio) of each of the two variables? 0.5 pts
+
+Q2. To analyze the association between one's ideological stance (`libconsv`) and their attitudes toward gun control (`gunlaw`), which variable should be the independent variable X (i.e., the cause or inherent characteristics), and which variable should be the dependent variable Y (i.e., the effect or outcome)? 0.5 pts
+
+We can see that `libconsv` has three categories: liberals, conservatives, and moderates. To simply the question, we can remove the "Moderate" category and you just need to focus on liberals v.s. conservatives in the rest of the analysis. Run the code chunk below to remove "Moderates".
+
+```{r}
+gss2 <- gss[gss$libconsv!='Moderate', ]     # exclude "moderate" from the dataframe 
+nrow(gss2)
+ncol(gss2)
+```
+
+## contingency tables
+
+In this week's lecture, we learned about how to use contingency table to analyze the association between two categorical variables. Now, let's analyze if there is an association between `libconsv` and `gunlaw` based on the GSS2006 data.
+
+As you know, to analyze variable associations in a contingency table, we need to turn the raw frequencies to row or column percentages. 
+
+Let's do row percentages for the joint frequency table first. Please run the code chunk below.  You will see that the raw numbers would be turned into proportions, and **they add up to 1 (which is 100%) along each row.** Then you can easily turn the proportions into percentages (proportions * 100% = percentages) by yourself.
+
+```{r}
+prop.table(table(gss2$libconsv, gss2$gunlaw), margin = 1)    # turn nums to ROW proportions
+```
+
+Alternatively, we can calculate the column proportions of the joint frequency table. Please run the code below, and you will see that **each column adds up to 1 (which is 100%)**:
+
+```{r}
+prop.table(table(gss2$libconsv, gss2$gunlaw), margin = 2)    # turn nums to COLUMN proportions
+```
+
+Now that you have all the tables, it's time to do some real analysis. Please read the tables carefully and answer:
+
+Q3. Based on your identification of X and Y, which table layout (row percentage or column percentage) is better for analyzing the association between one's ideological stance (`libconsv`) and their attitudes toward gun control (`gunlaw`)? 0.5 pts
+
+
+Q4. Based on the table of your choice, is there an association between `libconsv` and `gunlaw`? Please describe the association, including 1) the pattern, 2) the strength based on the rule of thumb, and 3) report the specific % point difference to justify your answer. **Please address all three parts to get full credits.** 1 pt
+
+
+
+## Chi-squared tests
+
+All the above analyses are based on the GSS sample data. We still don't know **whether the association observed in the GSS sample still holds true in the American adult population**. This calls for a hypothesis test -- Please run the code chunk below to conduct a chi-squared test on the 0.05 alpha level. 
+
+```{r}
+chisq.test(gss2$libconsv, gss2$gunlaw, correct=FALSE)      # chi2 test for categorical association
+```
+
+Now please answer:
+
+Q5.  What is the null hypothesis, and what is the alternative hypothesis for the test? Please state both hypotheses for full credits. 0.5 pts
+
+Q6.  What is the p-value of the test, which value should you compare the p-value to, and what is your decision regarding the null hypothesis based on the p-value? **Please answer all three parts for full credits.** 1 pt
+
+Q7.  Please write a paragraph to summarize all of your findings about the association between one's ideological stance and their attitudes toward gun control. **Please follow the template in the lecture slides** and make sure you do not miss any components: the strength, the pattern, and the significance, etc. 1 pt 
+
+
+## Finally
+
+Please change the **author** (line 3) and the **date** (line 4) in the header of this Rmd file (`HW9.Rmd`), then knit the file as a PDF document. Please DO NOT change any other lines in the header, or you may not be able to knit the PDF document. Please upload the PDF as a response to *HW 9*. Failure to submit the correct PDF will lead to **-0.5 points**.
